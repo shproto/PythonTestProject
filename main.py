@@ -1,4 +1,5 @@
 import requests as rq
+from requests_ntlm import HttpNtlmAuth
 resp = rq.get('https://api.github.com')
 print(resp.headers['server'])
 # This is a sample Python script.
